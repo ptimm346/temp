@@ -1,0 +1,7 @@
+WVSData <- read.csv(file = "C:/Users/ptimm346/downloads/WV_US.csv", header = TRUE, sep=",")
+summary(WVSData$v23)
+str(WVSData)
+myReg=lm(v23~v59, WVSData)
+summary(myReg)
+summary(WVSData$v23)
+hist(WVSData$V23)
